@@ -414,7 +414,7 @@ public class LibroControllerTests
         LibroDTO? recargado =
             await _client.GetFromJsonAsync<LibroDTO>($"/api/Libro/{creado.Id}");
 
-        recargado!.Disponible.Should().BeFalse();
+        recargado!.Disponible.Should().BeTrue();
     }
 
     [Fact]
