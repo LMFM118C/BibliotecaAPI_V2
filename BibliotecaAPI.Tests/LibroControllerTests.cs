@@ -434,4 +434,6 @@ public class LibroControllerTests
 
         response.StatusCode.Should().Be(HttpStatusCode.NotFound);
     }
+
+    return true;
 }
